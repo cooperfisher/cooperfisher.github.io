@@ -12,21 +12,21 @@ body {
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 36px;
     font-family: "Helvetica", sans-serif;
     color: #ffffff;
 }
 
 h2 {
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
     border-bottom: 1px solid #bbb;
 }
 
 header, nav, main, footer {
     margin: 1.25rem auto;
-    padding: .5rem;
-    max-width: 600px;
+    padding: 1rem;
+    max-width: 900px;
 }
 
 header, footer, footer a {
