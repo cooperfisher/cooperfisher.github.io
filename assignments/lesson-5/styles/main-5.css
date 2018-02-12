@@ -3,41 +3,117 @@
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
-  font-size: 16px;
-  /* Declare the base font-family - from google font api or other */
+    font-size: 16px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #4c4c4c;
+    background-color: #f2f2f2; 
+/* Declare the base font-family - from google font api or other */
 }
 
-header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+header, nav, main, footer {
+    color: #000000;
+    
+  /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 }
 
-header {}
-header h1 {}
-header img {}
-header .subheading {}
-
-nav {}
-nav button {}
-nav ul {}
-nav ul li {}
-nav ul li a {}
-nav ul li.active a {}
-nav ul li a:hover {}
-
-main {}
-main h2 {}
-main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img { width: 100%; }
-
-section {}
-
-article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-  width: ???; /* fill the page in the small/phone view */
-  margin: ???;
+header {
+    color: #000000;
+    margin: 20px;
+    padding: 5px 5px 5px 5px
+}
+header h1 {
+    color: #000000;
+}
+header img {
+    float: left;
 }
 
-footer {}
-footer aside {}
-footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+header .subheading {
+    margin: 20px;
+    
+}
+
+nav {}
+
+nav button {}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #808080;
+}
+
+nav ul li {
+    color: purple;
+}
+
+nav ul li a {
+    display: block;
+    color: #ffff9a;
+    padding: 8px 14px;
+    text-decoration: none;
+}
+
+nav ul li.active a {
+    color: #000000;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #cccccc;
+    color: #808080;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main {
+    color: #808080;
+    margin: 20px;
+}
+
+main h2, h3 {
+    color: #000000;
+}
+
+main figure { 
+    margin: 0px; 
+    width: 100%; 
+}
+
+main figure img { 
+    width: 100%; 
+}
+
+section {
+    color: #000000;
+}
+
+section.forecast {
+    display: none;
+}
+
+.current img {
+    display: none;
+}
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width: 100%; /* fill the page in the small/phone view */
+}
+
+footer {
+    margin: 20px;
+}
+
+footer aside {
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+
+footer>p {
+    text-align: center;
+} /* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */
