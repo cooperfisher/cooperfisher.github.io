@@ -4,7 +4,6 @@
 
 body {
     font-size: 16px;
-    font-family: Helvetica, Arial, sans-serif;
     color: #4c4c4c;
     background-color: #f2f2f2; 
 /* Declare the base font-family - from google font api or other */
@@ -12,6 +11,7 @@ body {
 
 header, nav, main, footer {
     color: #000000;
+    font-family: Helvetica, Arial, sans-serif;
     
   /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
@@ -20,8 +20,9 @@ header, nav, main, footer {
 header {
     color: #000000;
     margin: 20px;
-    padding: 5px 5px 5px 5px
+    padding: 5px 0px 70px 0px;
 }
+
 header h1 {
     color: #000000;
 }
@@ -31,7 +32,6 @@ header img {
 
 header .subheading {
     margin: 20px;
-    
 }
 
 nav {}
@@ -47,7 +47,7 @@ nav ul {
 }
 
 nav ul li {
-    color: purple;
+    color: orange;
 }
 
 nav ul li a {
@@ -76,6 +76,7 @@ main {
 
 main h2, h3 {
     color: #000000;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 main figure { 
@@ -89,10 +90,12 @@ main figure img {
 
 section {
     color: #000000;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 section.forecast {
     display: none;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .current img {
