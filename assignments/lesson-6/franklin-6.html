@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Williamport County Weather</title>
+  <meta name="author" content="Cooper Fisher">
+  <meta name="description" content="Official weather page for Williamsport County">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+  <!-- external style references in the proper cascading order -->    
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main-6.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium-6.css" rel="stylesheet"> <!-- medium/tablet views -->
+  <link href="styles/large-6.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+</head>
+<body>
+
+  <header>
+    <img src="images/weather-logo-200x200.png" alt="williamsport weather logo" width="200" height="200">
+    <h1>Franklin City Weather</h1>
+    <div class="subheading">Everything you need to know about the weather in Franklin!</div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav class="clearfix">
+    <div class="hamburger" onclick="toggleHam()"></div>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="primaryNavMenu" class="hide">
+    	<li><a href="#">Home</a></li>
+    	<li class="active"><a href="#">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="#">Storm Center</a></li>
+    	<li><a href="#">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    <h2>The City of Franklin</h2>
+    <figure>
+      <img src="images/franklin-400x205.png" alt="franklin city" width="400" height="205">
+    </figure>
+    <section>
+      <h3>Weather Summary</h3>    
+      <div class="highlow">
+        <p><strong>High</strong>: 88&deg;</p>  
+        <p><strong>Low</strong>: 72&deg;</p>  
+      </div>
+      <div class="current">
+        <h3>Sunny</h3>
+        <picture>
+            <img src="images/sunny-300x200.png" alt="sunny" width="300" height="200">
+        </picture>
+      </div>   
+      <div class="conditions">
+          <p><strong>Precipitation</strong>: 0 inches</p>  
+          <p><strong>Wind Speed</strong>: NNW 2 mph</p>  
+      </div>           
+    </section>
+        
+    <section class="forecast">
+      <h3>10 DAY FORECAST</h3>
+      <table>
+	    <thead>
+          <tr>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thur</th>
+            <th>Fri</th>
+            <th>Sat</th>
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+          </tr>
+		</thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+		</tbody>
+      </table>
+    </section>
+      
+    <article>
+      <h3>Global Warming in Franklin</h3>	
+      <p class="town-article">
+        <img src="images/gw-article-200x200.png" alt="global warming" width="200" height="200">
+      </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed leo odio, posuere a molestie at, accumsan id sem. Cras vestibulum pulvinar ex quis tempor. Phasellus elementum, est sed fermentum finibus, tortor nunc congue nunc, quis lacinia enim ante at dolor. Suspendisse eget dui id neque posuere dignissim. Maecenas eget suscipit arcu. Suspendisse non commodo odio.</p>
+    </article>		  
+  
+  </main>
+    
+  <footer>
+    <aside>
+      123 Main St. Franklin, UT 84123
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | Franklin Weather | <span id="curDate"></span></p>
+  </footer>
+
+  <script src="js/hamburger.js"></script>
+    
+  <script src="js/currentdate.js"></script>
+
+</body>
+</html>

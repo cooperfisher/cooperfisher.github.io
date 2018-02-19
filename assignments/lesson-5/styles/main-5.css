@@ -80,8 +80,9 @@ main h2, h3 {
 }
 
 main figure { 
-    margin: 0px; 
-    width: 100%; 
+    display: block;
+    margin: auto; 
+    width: auto; 
 }
 
 main figure img { 
@@ -103,7 +104,9 @@ section.forecast {
 }
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-  width: 100%; /* fill the page in the small/phone view */
+    width: 200px;
+    height: 200px;  
+    /* fill the page in the small/phone view */
 }
 
 footer {

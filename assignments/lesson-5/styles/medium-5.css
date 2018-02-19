@@ -1,6 +1,6 @@
 @media only screen and (min-width: 37.5em) {
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
-}
+
 nav button { 
     display:none; 
 }  /* hamburger button does not need to be shown */
@@ -9,37 +9,7 @@ nav ul li {
     display: inline-block;
     text-align: center;
     float: none;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    background-color: #808080;
-}
-
-nav ul li {
-    color: orange;
-}
-
-nav ul li a {
-    display: inline;
-    color: #ffff9a;
-    padding: 8px 14px;
-    text-decoration: none;
-}
-
-nav ul li.active a {
-    color: #000000;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    background-color: #cccccc;
-    color: #808080;
-    font-weight: bold;
-    text-decoration: none;
+    position: relative;
 }
 
 section.forecast h3 {
@@ -54,29 +24,44 @@ section.forecast th {
 section.forecast { 
     display: inline;
 }  /* show the 10-day forecast with the medium view and up */
+
+.current h3 {
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}   
     
 .current img {
+    margin: auto;
     display: block;
+    height: auto;
+    width: 40%;
+    padding: 10px;
 }
 
 table {
     width: 100%;
-    border: 1px solid black;
+    border: 2px solid black;
 }    
 
 th {
     height: 50px;
     text-align: center;
     background-color: #808080;
+    width: auto;
 }  
     
 td {
     text-align: center;
+    width: auto;
 }
     
 article p.town-article img { 
-    width: 62.666%; 
-    float: right; }  /* responsive images */
+    width: 40%;
+    height: auto;
+    float: right;  /* responsive images */
+    padding: 0px 0px 0px 50px;
 }
 
 footer {
@@ -88,3 +73,4 @@ footer aside {
     text-align: center;
 }
 
+}
