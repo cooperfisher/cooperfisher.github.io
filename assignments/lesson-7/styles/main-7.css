@@ -23,17 +23,21 @@ header, nav, main, footer {
 }
 
 header {
+
     color: #000000;
     margin: 20px;
     padding: 5px 0px 70px 0px;
 }
 
 header h1 {
+    display: flex;
+    flex-flow: row;
     color: #000000;
     margin: auto;
 }
 header img {
-    float: left;
+    display: flex;
+    justify-content: center;
     position: relative;
     margin-top: -40px;
 }
@@ -111,9 +115,9 @@ main h2, h3 {
 }
 
 main figure { 
-    display: block;
+    display: flex;
     margin: auto; 
-    width: auto; 
+    max-width: 400px; 
 }
 
 main figure img { 

@@ -27,6 +27,7 @@ nav ul li a {
     
 main figure {
     display: flex;
+    justify-content: center;
     max-width: 400px; 
 }
     
