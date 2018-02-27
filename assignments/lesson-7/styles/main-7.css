@@ -1,0 +1,164 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    color: #4c4c4c;
+    background-color: #f2f2f2; 
+/* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer {
+    color: #000000;
+    font-family: Helvetica, Arial, sans-serif;
+    
+  /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {
+    color: #000000;
+    margin: 20px;
+    padding: 5px 0px 70px 0px;
+}
+
+header h1 {
+    color: #000000;
+    margin: auto;
+}
+header img {
+    float: left;
+    position: relative;
+    margin-top: -40px;
+}
+
+header .subheading {
+    font-family: 'Libre Baskerville', Serif;
+}
+
+* {margin: 0}
+
+.hamburger {
+    display: block;
+    position: absolute;
+    top: 2.0rem;
+    right: 1.25rem;
+}
+
+.navigation
+
+nav {
+    background-color: #aa0000;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #808080;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #808080;
+}
+
+nav ul li {}
+
+nav ul li a {
+    display: block;
+    padding: 8px 14px;
+    text-decoration: none;
+    color: #ffff9a;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+nav ul li.active a {
+    color: #000000;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #cccccc;
+    color: #808080;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+main {
+    color: #808080;
+    margin: 20px;
+    font-family: 'Libre Baskerville', Serif;
+}
+
+main h2, h3 {
+    color: #000000;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+main figure { 
+    display: block;
+    margin: auto; 
+    width: auto; 
+}
+
+main figure img { 
+    width: 100%;
+    height: auto;
+}
+
+section {
+    color: #000000;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+section.forecast {
+    display: none;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.current img {
+    display: none;
+}
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    width: 200px;
+    height: 200px;  
+    /* fill the page in the small/phone view */
+}
+
+footer {
+    margin: 20px;
+}
+
+footer aside {
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+
+footer>p {
+    text-align: center;
+} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
