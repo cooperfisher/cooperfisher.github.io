@@ -92,4 +92,15 @@ footer aside {
     text-align: center;
 }
 
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1f;
+    grid-row-gap: 20px;
+     
+}
+
+.gallery img:hover {
+    box-shadow: 0px 0px 20px #777777;
+}    
+    
 }

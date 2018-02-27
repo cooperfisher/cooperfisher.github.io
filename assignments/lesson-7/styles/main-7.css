@@ -160,6 +160,23 @@ footer>p {
 
 /* Other Class Selectors */
 
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+     
+}
+
+.gallery img:hover {
+    box-shadow: 0px 0px 20px #777777;
+}
+
+figcaption {
+    text-align: left;
+    font-family: 'Libre Baskerville', Serif;
+    font-size: smaller;
+}
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";
