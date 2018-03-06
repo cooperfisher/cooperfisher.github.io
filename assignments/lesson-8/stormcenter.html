@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Williamport County Weather</title>
+  <meta name="author" content="Cooper Fisher">
+  <meta name="description" content="Official weather page for Williamsport County">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+  <!-- external style references in the proper cascading order -->    
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main-8.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium-8.css" rel="stylesheet"> <!-- medium/tablet views -->
+  <link href="styles/large-8.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+</head>
+    
+<body>
+
+  <header>
+    <img src="images/weather-logo-200x200.png" alt="williamsport weather logo" width="200" height="200">
+    <h1>Franklin City Weather</h1>
+    <div class="subheading">Everything you need to know about the weather in Franklin!</div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav class="clearfix">
+    <div class="hamburger" onclick="toggleHam"></div>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="primaryNavMenu" class="hide">
+    	<li><a href="#">Home</a></li>
+    	<li><a href="franklin-8.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li class="active"><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery-8.html">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    <h2>REPORT A STORM IN YOUR AREA</h2>
+<div class="ablock">
+	<form method="post" action="/thanks.html">
+		<fieldset>
+            <legend><span>Personal Information</span></legend>
+            <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{5,50}" required></label>
+            <label><span>Email:</span><input name="email" type="email" value="" placeholder="example@gmail.com"></label>
+            <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="###-###-####" patter="[0-9]{10,20}" required></label>
+            <label><span>Zip Code:</span><input name="zipcode" type="number" value="" placeholder="" pattern="[0-9 -]{5,9}" required></label>	
+        </fieldset>
+
+        <fieldset>
+        <legend><span>Storm Information</span></legend>
+        <label><span>Storm Date:</span><input name="date" type="date"></label>
+        
+        <label>
+        <span>Storm Type:</span>    
+        <input type="text" name"stmType" list="stormtype">
+            <datalist id="stormtype">
+                <option value="Flash Flood">Flash Flood</option>
+                <option value="Hail">Hail</option>
+                <option value="Hurricane">Hurricane</option>
+                <option value="Thunderstorm">Thunderstorm</option>
+                <option value="Tornado">Tornado</option>
+            </datalist>
+        </label>
+		
+        <label>
+        <span>Storm Severity:</span>
+        <label for="rating">Rating (1 to 10)
+		<input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		<span id="ratingvalue">5</span>
+        </label>
+        
+        <label>
+        <span>Storm Region:</span>    
+        <input type="text" name"stmRegion" list="stormregion">
+            <datalist id="stormregion">
+                <option value="Select Region" selected>Select Region...</option>
+                <option value="Franklin">Franklin</option>
+                <option value="Greenville">Greenville</option>
+                <option value="Springfield">Springfield</option>
+            </datalist>
+        </label>
+
+		<fieldset>
+			<label for="dangerLvl">User In Danger Level (Select One)
+            <input type="radio" name="dangerLvl" value="Yes">Yes<br>
+			<input type="radio" name="dangerLvl" value="Maybe" checked>Maybe<br>
+			<input type="radio" name="dangerLvl" value="No">No<br>
+            </label>
+		</fieldset>
+            
+		<fieldset>
+			<legend>Additional Information</legend>
+            <label><span>Comments</span></label>
+            <textarea name="message" rows="15" cols="30"></textarea>
+		
+		<div>
+			<input type="submit">
+		</div>
+	</form>
+</div>
+  </main>
+    
+  <footer>
+    <aside>
+      123 Main St. Franklin, UT 84123
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | Franklin Weather | <span id="curDate"></span></p>
+  </footer>
+
+  <script src="js/hamburger.js"></script>
+    
+  <script src="js/currentdate.js"></script>
+    
+  <script src="js/slider.js"></script>
+    
+</body>
+</html>
