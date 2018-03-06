@@ -94,11 +94,12 @@ footer aside {
 
 .gallery {
     display: grid;
-    grid-template-columns: 1fr 1f;
+    grid-template-columns: 1fr 1fr;
     grid-row-gap: 20px;
      
 }
 .gallery img:hover {
     box-shadow: none;    
-    
+}
+
 }

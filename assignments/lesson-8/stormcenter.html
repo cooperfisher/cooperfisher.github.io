@@ -44,8 +44,8 @@
             <legend><span>Personal Information</span></legend>
             <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{5,50}" required></label>
             <label><span>Email:</span><input name="email" type="email" value="" placeholder="example@gmail.com"></label>
-            <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="###-###-####" patter="[0-9]{10,20}" required></label>
-            <label><span>Zip Code:</span><input name="zipcode" type="number" value="" placeholder="" pattern="[0-9 -]{5,9}" required></label>	
+            <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="###-###-####" pattern="[0-9]{10,20}" required></label>
+            <label><span>Zip Code:</span><input name="zipcode" type="number" value="" placeholder="" required></label>	
         </fieldset>
 
         <fieldset>
@@ -54,7 +54,7 @@
         
         <label>
         <span>Storm Type:</span>    
-        <input type="text" name"stmType" list="stormtype">
+        <input type="text" name="stormType" list="stormtype">
             <datalist id="stormtype">
                 <option value="Flash Flood">Flash Flood</option>
                 <option value="Hail">Hail</option>
@@ -69,11 +69,10 @@
         <label for="rating">Rating (1 to 10)
 		<input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
 		<span id="ratingvalue">5</span>
-        </label>
         
         <label>
         <span>Storm Region:</span>    
-        <input type="text" name"stmRegion" list="stormregion">
+        <input type="text" name="stormRegion" list="stormregion">
             <datalist id="stormregion">
                 <option value="Select Region" selected>Select Region...</option>
                 <option value="Franklin">Franklin</option>
