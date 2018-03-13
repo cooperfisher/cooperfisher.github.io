@@ -1,4 +1,4 @@
-var requestURL = 'http://api.wunderground.com/api/6c1a326cb1a9ec1a/conditions/forecast/q/NV/Reno.json';
+var requestURL = 'https://api.wunderground.com/api/6c1a326cb1a9ec1a/conditions/forecast/q/MN/Franklin.json';
 var request = new XMLHttpRequest();
 
 request.open('GET', requestURL, true);
