@@ -1,0 +1,48 @@
+header, h2, footer {
+   font-family: Helvetica, sans-serif;
+   color: #000;
+}
+
+table {
+   box-shadow: 5px 5px 15px #628ca6;
+}
+
+table, th, td {
+   font-family: Ubuntu, sans-serif;
+   font-size: 16px;
+   padding: 6px;
+   border-collapse: collapse;
+   border: 1px solid lightgray;
+}
+
+table#table1 th {
+   background-color: #7fb9c2;
+   color: #000;
+}
+
+table#table1 tr:nth-child(even) {
+    background-color: #e7f0ed;
+}
+table tr:nth-child(odd) {
+    background-color: #e7ffed;
+}
+
+table th {
+    color: white;
+    background-color: black;
+}
+
+th, td {
+    padding: 4px;
+    text-align: center;
+}
+
+tfoot td {
+    font-size: 12px;
+    background-color: #7fb9c2;
+    color: #000;
+}
+
+footer {
+    padding: 50px 0px;
+}
