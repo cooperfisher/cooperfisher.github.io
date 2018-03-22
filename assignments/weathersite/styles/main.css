@@ -1,0 +1,251 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    color: #4c4c4c;
+    background-color: #f2f2f2;
+    line-height: 1.5em;
+/* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer {
+    color: #000000;
+    font-family: Helvetica, Arial, sans-serif;
+    
+  /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {
+
+    color: #000000;
+    margin: 20px;
+    padding: 5px 0px 70px 0px;
+}
+
+header h1 {
+    display: flex;
+    flex-flow: row;
+    color: #000000;
+    margin: auto;
+}
+header img {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: -40px;
+}
+
+header .subheading {
+    font-family: 'Libre Baskerville', Serif;
+    margin: 10px 0px;
+}
+
+* {margin: 0}
+
+.hamburger {
+    display: block;
+    position: absolute;
+    top: 2.0rem;
+    right: 1.25rem;
+}
+
+.navigation
+
+nav {
+    background-color: #aa0000;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #808080;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #808080;
+}
+
+nav ul li {}
+
+nav ul li a {
+    display: flex;
+    padding: 8px 14px;
+    text-decoration: none;
+    color: #ffff9a;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+nav ul li.active a {
+    color: #000000;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #cccccc;
+    color: #808080;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+main {
+    color: #808080;
+    margin: 20px;
+    font-family: 'Libre Baskerville', Serif;
+}
+
+main h2, h3 {
+    color: #000000;
+    font-size: 24px;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-left: 30px;
+    padding: 20px 0px;    
+}
+
+main figure { 
+    display: flex;
+    margin: auto; 
+    max-width: 400px; 
+}
+
+main figure img { 
+    width: 100%;
+    height: auto;
+}
+
+section {
+    color: #759bc3;
+    font-family: 'Libre Baskerville', Serif;
+}
+
+section article {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+    background-color: #ffff9a;
+    border-radius: 100px;
+}
+
+section.forecast {
+    display: none;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.current img {
+    display: none;
+}
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    width: 200px;
+    height: 200px;  
+    /* fill the page in the small/phone view */
+}
+
+footer {
+    margin: 20px;
+}
+
+footer aside {
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+
+footer>p {
+    text-align: center;
+} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;    
+}
+
+.gallery img:hover {
+    box-shadow: none;
+}
+
+figcaption {
+    text-align: left;
+    font-family: 'Libre Baskerville', Serif;
+    font-size: smaller;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* FORM */
+
+
+legend {
+    color: #7d2a35;
+    margin-left: 6%;
+    padding: .6em;
+    border: #759bc3 solid 10px;
+    background-color: #ffff9a;
+}
+
+label {
+    margin: .5em;
+}
+
+label span {
+    display: block;
+    font-size: 16px;
+    color: #000;
+    padding-top: .9em;
+    padding-bottom: .2em;
+}
+
+input { 
+    margin:5px 20px; 
+    font-size:.8em; 
+    color: gray;
+    font-family: Helvetica, sans-serif;
+}
+
+label {
+    margin-right:-10px;
+    color: #759bc3;
+    font-family: Helvetica, sans-serif;
+}
+
+fieldset {
+    margin-bottom:15px;
+    background-color:#eee;
+    font-family: Helvetica, sans-serif;
+    border: #759bc3 solid 10px;
+}
+
+legend { 
+    color: #000000;
+    font-family: Helvetica, sans-serif;
+}
+
+#ratingvalue {
+    font-family: Helvetica, sans-serif;
+    color: #759bc3;
+}

@@ -38,7 +38,7 @@ request.onload = function() {
             
 }
 
-
+/*
 function populateHeader(jsonObj) {
   var myH1 = document.createElement('h1');
   myH1.textContent = jsonObj['squadName'];
@@ -82,3 +82,4 @@ function showHeroes(jsonObj) {
     s.appendChild(myArticle);
   }
 }
+*/
