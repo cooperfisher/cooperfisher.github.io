@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Mountain Spoke</title>
+  <meta name="author" content="Cooper Fisher">
+  <meta name="description" content="Official website for The Mountain Spoke of Bozeman Montana">
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">    
+  <link href="styles/normalize.css" rel="stylesheet">
+  <link href="styles/main.css" rel="stylesheet">
+  <link href="styles/medium.css" rel="stylesheet">
+  <link href="styles/large.css" rel="stylesheet">
+</head>
+    
+<body>
+
+  <header>
+    <a href="home.html">  
+        <img src="images/tms-logo.png" alt="the mountain spoke logo" width="200" height="200">
+    </a>    
+    <h1>THE MOUNTAIN SPOKE</h1>
+    <div class="subheading">Bozeman Montana's source for ALL things bicycles!</div>
+  </header>
+
+  <nav class="clearfix">
+    <div class="hamburger" onclick="toggleHam"></div>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="primaryNavMenu" class="hide">
+    	<li><a href="home.html">Home</a></li>
+    	<li><a href="tours.html">Adventure Tours</a></li>
+    	<li><a href="events.html">Events</a></li>
+    	<li class="active"><a href="sales.html">Sales</a></li>
+    	<li><a href="services.html">Services</a></li>
+    	<li><a href="contact.html">Contact Us</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    <h2>HIGH QUALITY MOUNTAIN BIKES</h2>
+      
+    <button class="accordion">Cannondale Trail 7</button>
+        <div class="panel">
+            <img src="images/cannondale.jpeg" alt="cannondale mountain bike" width="300" height="300">
+            
+            <ul>
+                <p>$700.00</p>
+                
+                <li>Aluminum alloy frame offers exceptional stiffness, durability and smoothness, striking a balance between race-level quickness and confidence-inspiring stability</li>
+                
+                <li>Shimano Altus drivetrain deftly moves through the 18 gears for smooth shifting</li>
+                
+                <li>Hydraulic disc brakes offer superb speed management</li>
+                
+                <li>Small frame sizes have 27.5 in. tires; Medium, Large and Extra-Large frames have 29 in. tires</li>
+            </ul>
+        </div>
+    
+    <button class="accordion">GHOST Kato 6</button>
+        <div class="panel">
+            <img src="images/ghost.jpeg" alt="ghost mountain bike" width="300" height="300">
+            
+            <p>$1,199.00</p>
+          <ul> 
+            <li>Trusted geometry is balanced to offer high-quality riding characteristics in any situation</li>
+            
+            <li>Shimano Deore 36/26t crankset is paired with a 10-speed, 11-36t cassette, giving you 20 gears to tackle any trail; Deore drivetrain lets you shift quickly and precisely</li>
+            
+            <li>Alex TD 19 rims spin smoothly around Shimano hubs and are wrapped with Continental X-King 27.5 or 29 in. x 2.2 in. tires for great traction</li>
+            
+            <li>Small and Medium frame sizes have 27.5 in. tires; Large and Extra-Large frames have 29 in. tires</li>
+          </ul>
+            
+        </div>
+      
+    <button class="accordion">Diamondback Release 4C Carbon</button>
+        <div class="panel">
+            <img src="images/diamond-back.jpeg" alt="diamondback mountain bike" width="300" height="300">
+            <p>$3,000.00</p>
+         <ul>   
+            <li>Light, stiff carbon monocoque frame with Boost 148x12mm Maxle dropout</li>
+            
+            <li>Shimano SLX 11-speed single-ring drivetrain provides consistent shifting and, thanks to its generous 46-tooth granny gear, makes short work of climbs you'd normally despise</li>
+            
+            <li>Fox Float DPS EVOL LV rear shock and Fox 34 Performance Float fork provide smooth bump-eating performance (150/130mm suspension travel, front and rear)</li>
+            
+            <li>KS LEV Si dropper post (with Southpaw remote lever) adds maneuverability on descents</li>
+          </ul>
+            
+        </div>
+    
+    
+  </main>
+    
+  <footer>
+    <aside>
+      3950 Valley Commons Dr. Bozeman, MT 59718
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | The Mountain Spoke | <span id="curDate"></span> | <a href="resources.html">Resources</a> | <a href="tms-planning-document.pdf" target="_blank">Planning Document</a> </p>
+  </footer>
+
+  <script src="js/hamburger.js"></script>
+    
+  <script src="js/currentdate.js"></script>
+    
+  <script src="js/accordion.js"></script>
+    
+</body>
+</html>

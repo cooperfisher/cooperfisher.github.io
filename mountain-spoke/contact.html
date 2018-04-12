@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Mountain Spoke</title>
+  <meta name="author" content="Cooper Fisher">
+  <meta name="description" content="Official website for The Mountain Spoke of Bozeman Montana">
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="styles/normalize.css" rel="stylesheet">
+  <link href="styles/main.css" rel="stylesheet">
+  <link href="styles/medium.css" rel="stylesheet">
+  <link href="styles/large.css" rel="stylesheet">
+</head>
+    
+<body>
+
+  <header>
+    <a href="home.html">  
+        <img src="images/tms-logo.png" alt="the mountain spoke logo" width="200" height="200">
+    </a>    
+    <h1>THE MOUNTAIN SPOKE</h1>
+    <div class="subheading">Bozeman Montana's source for ALL things bicycles!</div>
+  </header>
+
+  <nav class="clearfix">
+    <div class="hamburger" onclick="toggleHam"></div>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="primaryNavMenu" class="hide">
+    	<li><a href="home.html">Home</a></li>
+    	<li><a href="tours.html">Adventure Tours</a></li>
+    	<li><a href="events.html">Events</a></li>
+    	<li><a href="sales.html">Sales</a></li>
+    	<li><a href="services.html">Services</a></li>
+    	<li class="active"><a href="contact.html">Contact Us</a></li>
+    </ul>		
+  </nav>
+    
+    <main>
+      <h3>CONTACT US</h3>
+    
+        <section id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9314410355205!2d-111.09290618416607!3d45.67227662755555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1523418792592" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </section>
+        
+        <section class="contact">
+        <p>Hours: Monday - Saturday | 8:00 AM - 9:00 PM</p>
+        <address>
+            The Mountain Spoke<br>
+            3950 Valley Commons Drive<br>
+            Bozeman, MT 59718<br>
+            USA
+        </address>
+        </section>
+
+    </main>
+        
+    <footer>
+    <aside>
+      3950 Valley Commons Dr. Bozeman, MT 59718
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | The Mountain Spoke | <span id="curDate"></span> | <a href="resources.html">Resources</a> | <a href="tms-planning-document.pdf" target="_blank">Planning Document</a> </p>
+  </footer>
+
+  <script src="js/hamburger.js"></script>
+    
+  <script src="js/currentdate.js"></script>
+    
+</body>
+</html>

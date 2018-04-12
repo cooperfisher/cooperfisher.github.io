@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Mountain Spoke</title>
+  <meta name="author" content="Cooper Fisher">
+  <meta name="description" content="Official website for The Mountain Spoke of Bozeman Montana">
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="styles/normalize.css" rel="stylesheet">
+  <link href="styles/main.css" rel="stylesheet">
+  <link href="styles/medium.css" rel="stylesheet">
+  <link href="styles/large.css" rel="stylesheet">
+</head>
+    
+<body>
+
+  <header>
+    <a href="home.html">  
+        <img src="images/tms-logo.png" alt="the mountain spoke logo" width="200" height="200">
+    </a>    
+    <h1>THE MOUNTAIN SPOKE</h1>
+    <div class="subheading">Bozeman Montana's source for ALL things bicycles!</div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav class="clearfix">
+    <div class="hamburger" onclick="toggleHam"></div>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="primaryNavMenu" class="hide">
+    	<li><a href="home.html">Home</a></li>
+    	<li><a href="tours.html">Adventure Tours</a></li>
+    	<li><a href="events.html">Events</a></li>
+    	<li><a href="sales.html">Sales</a></li>
+    	<li class="active"><a href="services.html">Services</a></li>
+    	<li><a href="contact.html">Contact Us</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    <h3>REPAIR SHOP SERVICES</h3>
+      <section class="repairs">
+      <table>
+          
+	    <thead>
+          <tr>
+            <th>WHEELS</th>
+            <th>FRAME &amp FORK</th>
+            <th>DRIVETRAIN</th>
+            <th>BRAKES</th>
+          </tr>
+		</thead>
+        
+        <tbody>  
+          <tr>
+            <td>Flat repairs</td>
+            <td>Replace fork</td>
+            <td>Clean and lube</td>
+            <td>Brake replacement</td>
+          </tr>
+            
+          <tr>
+            <td>Install wheels</td>
+            <td>Tune suspension</td>
+            <td>Install pedals</td>
+            <td>Adjust brakes</td>
+          </tr>
+        
+          <tr>
+            <td>Replace spokes</td>
+            <td>Frame alignment</td>
+            <td>Replace shift cables</td>
+            <td>Bleed hydraulic brakes</td>
+          </tr>
+            
+		</tbody>
+      </table>
+      </section>        
+  </main>
+    
+  <footer>
+    <aside>
+      3950 Valley Commons Dr. Bozeman, MT 59718
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | The Mountain Spoke | <span id="curDate"></span> | <a href="resources.html">Resources</a> | <a href="tms-planning-document.pdf" target="_blank">Planning Document</a> </p>
+  </footer>
+
+  <script src="js/hamburger.js"></script>
+    
+  <script src="js/currentdate.js"></script>
+
+  <script src="data/services.json"></script>
+</body>
+</html>

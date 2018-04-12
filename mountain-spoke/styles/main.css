@@ -1,0 +1,343 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    color: #4c4c4c;
+    background-color: #12394f;
+    line-height: 1.5em;
+/* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer, p {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    color: #ffffff;
+    margin: 20px;
+    padding: 5px 0px 70px 0px;
+}
+
+header h1 {
+    display: flex;
+    flex-flow: row;
+    color: #ffffff;
+    margin: auto;
+    justify-content: center;
+}
+header img {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+}
+
+header .subheading {
+    text-align: center;
+    font-family: 'Montserrat', serif;
+    margin: 10px 0px;
+}
+
+* {margin: 0}
+
+.hamburger {
+    display: block;
+    position: absolute;
+    top: 2.0rem;
+    right: 1.25rem;
+}
+
+.navigation
+
+nav {
+    background-color: #aa0000;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #808080;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin: inherit;
+    padding: 0;
+    width: 100%;
+    background-color: #506e55;
+}
+
+nav ul li {}
+
+nav ul li a {
+    display: flex;
+    padding: 8px 14px;
+    text-decoration: none;
+    color: #ffffff;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+nav ul li.active a {
+    color: #84aab7;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #84aab7;
+    color: #12394f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+main {
+    color: #808080;
+    margin: 20px;
+    font-family: 'Lora', serif;
+}
+
+main h2, h3 {
+    color: #ffffff;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 30px;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+main figure { 
+    display: flex;
+    margin: auto; 
+    max-width: 400px; 
+}
+
+main figure img { 
+    width: 100%;
+    height: auto;
+}
+
+main img {
+    border: 2px solid #fff;
+    box-shadow: 2px 2px 2px #777777;
+    display: flex;
+    margin: auto;
+}
+section {
+    color: #ffffff;
+    font-family: 'Lora', serif;
+}
+
+section h3{
+    color: #ffffff;
+     text-align: center;
+}
+
+section article {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+    background-color: #84aab7;
+    border-radius: 100px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+
+section table {
+    max-width: auto;
+    margin: auto;
+    border: 2px solid #fff;
+}
+
+section img {
+    
+}
+
+section.beginner {
+    display: inline-flex;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section.intermediate {
+    display: inline-flex;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section.expert {
+    display: center;
+    font-family: 'Montserrat', sans-serif;    
+}
+
+.current img {
+    display: none;
+}
+
+footer {
+    margin: 20px;
+}
+
+footer aside {
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+
+footer>p {
+    text-align: center;
+} 
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: ;
+    grid-row-gap: 20px;    
+}
+
+figcaption {
+    text-align: left;
+    font-family: 'Lora', serif;
+    font-size: smaller;
+}
+
+table th, td {
+    background-color: #506e55;
+    font-family: 'Montserrat', sans-serif;
+}
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* FORM */
+legend {
+    color: #7d2a35;
+    margin-left: 6%;
+    padding: .6em;
+    border: #ffffff solid 4px;
+    background-color: #84aab7;
+}
+
+label {
+    margin: .5em;
+}
+
+label span {
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    padding-top: .9em;
+    padding-bottom: .2em;
+}
+
+input { 
+    margin:10px 20px; 
+    font-size:.8em; 
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+}
+
+label {
+    margin-right: 15px;
+    color: #759bc3;
+    font-family: 'Montserrat', sans-serif;
+}
+
+fieldset {
+    margin-bottom:15px;
+    background-color:#506e55;
+    font-family: 'Montserrat', sans-serif;
+    border: #ffffff solid 2px;
+}
+
+legend { 
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#ratingvalue {
+    font-family: 'Montserrat', sans-serif;
+    color: #759bc3;
+}
+
+section map {
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+}
+
+address {
+    margin: auto;
+    padding: 0px 10px 0px 100px;
+}
+
+.contact {
+    font-family: 'Montserrat', sans-serif;
+    border: 8px solid #506e55;
+}
+
+/* Accordian Menu */
+.accordion {
+    background-color: #506e55;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 2px solid #ffffff;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+ul, p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.accordion:hover {
+    background-color: #ccc;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.accordion.active:after {
+    content: "\2796";
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}

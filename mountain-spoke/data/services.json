@@ -1,0 +1,30 @@
+{
+  "repairShop": "TMS Repair Shop",
+  "active": true,
+  "repairs": [
+    {
+      "type": "Wheels",
+      "flat": "$10",
+      "hubService": "$20",
+    },
+    {
+      "type": "Brakes",
+      "pads": "$25",
+      "cableAdjustment": "$15",
+      "disc": "$20",
+    },
+    {
+      "type": "Gears",
+      "gear": "$28",
+    },
+    {
+      "type": "Suspension",
+      "fork": "$18",
+      "bushing": "$30"
+    },
+      {
+      "type": "Drivetrain",
+      "chain": "$5",
+    }
+  ]
+}

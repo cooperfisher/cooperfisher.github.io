@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Mountain Spoke</title>
+  <meta name="author" content="Cooper Fisher">
+  <meta name="description" content="Official website for The Mountain Spoke of Bozeman Montana">
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">    
+  <link href="styles/normalize.css" rel="stylesheet">
+  <link href="styles/main.css" rel="stylesheet">
+  <link href="styles/medium.css" rel="stylesheet">
+  <link href="styles/large.css" rel="stylesheet">
+</head>
+    
+<body>
+
+  <header>
+    <a href="home.html">  
+        <img src="images/tms-logo.png" alt="the mountain spoke logo" width="200" height="200">
+    </a>    
+    <h1>THE MOUNTAIN SPOKE</h1>
+    <div class="subheading">Bozeman Montana's source for ALL things bicycles!</div>
+  </header>
+
+  <nav class="clearfix">
+    <div class="hamburger" onclick="toggleHam"></div>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="primaryNavMenu" class="hide">
+    	<li><a href="home.html">Home</a></li>
+    	<li class="active"><a href="tours.html">Adventure Tours</a></li>
+    	<li><a href="events.html">Events</a></li>
+    	<li><a href="sales.html">Sales</a></li>
+    	<li><a href="services.html">Services</a></li>
+    	<li><a href="contact.html">Contact Us</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    <h2>TOUR THE MOUNTAINS OF BOZEMAN</h2>    
+                
+    <section class="beginner">
+      <h3>Mountain Course #1</h3>
+        
+        <figure class="tours">
+          <img src="images/lick-creek-300-305.jpg" alt="lick creek trail" width="300" height="305">
+        </figure>
+        
+      <table>
+	    <thead>
+          <tr>
+            <th>Length</th>
+            <th>Skill Level</th>
+            <th>Location</th>
+            <th>Cost</th>
+          </tr>
+		</thead>
+        <tbody>  
+          <tr>
+            <td>9 Miles</td>
+            <td>Beginner</td>
+            <td>Lick Creek</td>
+            <td>$45</td>
+          </tr>
+		</tbody>
+      </table>
+    </section>
+    
+    <section class="intermediate">
+      <h3>Mountain Course #2</h3>
+        
+        <figure class="tours">
+          <img src="images/mystic-lake-300x296.jpg" alt="mystic lake trail" width="300" height="296">
+        </figure>
+        
+      <table>
+	    <thead>
+          <tr>
+            <th>Length</th>
+            <th>Skill Level</th>
+            <th>Location</th>
+            <th>Cost</th>
+          </tr>
+		</thead>
+        <tbody>  
+          <tr>
+            <td>18 Miles</td>
+            <td>Intermediate</td>
+            <td>Mystic Lake</td>
+            <td>$65</td>
+          </tr>
+		</tbody>
+      </table>
+    </section>
+      
+    <section class="expert">
+      <h3>Mountain Course #3</h3>
+        
+        <figure class="tours">
+          <img src="images/truman-gulch-300x283.jpg" alt="truman gulch trail" width="300" height="283">
+        </figure>
+        
+      <table>
+	    <thead>
+          <tr>
+            <th>Length</th>
+            <th>Skill Level</th>
+            <th>Location</th>
+            <th>Cost</th>
+          </tr>
+		</thead>
+        <tbody>  
+          <tr>
+            <td>7 Miles</td>
+            <td>Expert</td>
+            <td>Truman Gulch</td>
+            <td>$85</td>
+          </tr>
+		</tbody>
+      </table>
+    </section>
+  
+  </main>
+    
+  <footer>
+    <aside>
+      3950 Valley Commons Dr. Bozeman, MT 59718
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | The Mountain Spoke | <span id="curDate"></span> | <a href="resources.html">Resources</a> | <a href="tms-planning-document.pdf" target="_blank">Planning Document</a> </p>
+  </footer>
+
+  <script src="js/hamburger.js"></script>
+    
+  <script src="js/currentdate.js"></script>
+    
+</body>
+</html>
